@@ -1,3 +1,7 @@
 export default function Home() {
-  return <>his</>;
+  return (
+    <>
+      <h1>his mine</h1>
+    </>
+  );
 }
