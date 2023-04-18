@@ -10,7 +10,7 @@ const Home = () => {
     );
 
     await tossPayments.requestPayment("카드", {
-      amount: 1108000,
+      amount: 1108,
       orderId: Math.random().toString(36).slice(2),
       orderName: "희연님우주비행사토끼",
       successUrl: `${window.location.origin}/api/payments`,
