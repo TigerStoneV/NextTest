@@ -31,7 +31,7 @@ export default function Page() {
       setPayment(payments);
     })();
   });
-  console.log(payment);
+
   return (
     <div>
       {payment && (

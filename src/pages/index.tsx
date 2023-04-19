@@ -10,17 +10,19 @@ const Home = () => {
     );
 
     await tossPayments.requestPayment("카드", {
-      amount: 1108,
+      amount: 10000,
       orderId: Math.random().toString(36).slice(2),
-      orderName: "희연님우주비행사토끼",
+      orderName: "스타벅스",
       successUrl: `${window.location.origin}/api/payments`,
       failUrl: `${window.location.origin}/api/payments/fail`,
+      // customerEmail: "customer123@gmail.com",
+      customerName: "김희연",
     });
   };
   return (
     <>
       <h1>
-        <Button onClick={handleClick}>희연님우주비행사토끼 10원</Button>
+        <Button onClick={handleClick}>인호 10원</Button>
       </h1>
     </>
   );
